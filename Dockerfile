@@ -1,8 +1,8 @@
 FROM octohost/base:trusty
 
-# Go 1.5.3
-RUN curl -sf -o /tmp/go1.5.3.linux-amd64.tar.gz -L https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz; \
-  mkdir -p /opt && cd /opt && tar xfz /tmp/go1.5.3.linux-amd64.tar.gz && rm -f /tmp/go1.5.3.linux-amd64.tar.gz
+# Go 1.6
+RUN curl -sf -o /tmp/go1.6.linux-amd64.tar.gz -L https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz; \
+  mkdir -p /opt && cd /opt && tar xfz /tmp/go1.6.linux-amd64.tar.gz && rm -f /tmp/go1.6.linux-amd64.tar.gz
 
 ENV GOROOT /opt/go
 ENV GOPATH /root/gocode
