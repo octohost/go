@@ -1,6 +1,6 @@
 FROM octohost/base:trusty
 
-ENV GO_VERSION=1.7.1
+ENV GO_VERSION=1.7.3
 
 RUN curl -sf -o /tmp/go${GO_VERSION}.linux-amd64.tar.gz -L https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz; \
   mkdir -p /opt && cd /opt && tar xfz /tmp/go${GO_VERSION}.linux-amd64.tar.gz && rm -f /tmp/go${GO_VERSION}.linux-amd64.tar.gz
